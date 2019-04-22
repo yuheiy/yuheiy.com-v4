@@ -1,11 +1,9 @@
-const fs = require('fs')
+const fs = require('fs').promises
 const postcss = require('postcss')
 const autoprefixer = require('autoprefixer')
 const gapProperties = require('postcss-gap-properties')
 const CleanCSS = require('clean-css')
 const touch = require('touch')
-
-const isWatch = process.argv.slice(2).includes('--watch')
 
 const postcssPlugins = [
   autoprefixer({ cascade: false }),
@@ -21,33 +19,21 @@ const optimizer = new CleanCSS({
   returnPromise: true,
 })
 
-const buildCSS = async () => {
-  try {
-    const src = await fs.promises.readFile('src/main.css')
-    const postcssResult = await postcss(postcssPlugins).process(
-      src,
-      processOptions,
-    )
-    const optimized = await optimizer.minify(postcssResult.css)
-    await fs.promises.writeFile(
-      'src/_data/css.json',
-      JSON.stringify(optimized.styles),
-    )
+const main = async () => {
+  const src = await fs.readFile('src/main.css')
+  const postcssResult = await postcss(postcssPlugins).process(
+    src,
+    processOptions,
+  )
+  const optimized = await optimizer.minify(postcssResult.css)
+  await fs.writeFile('src/_data/css.json', JSON.stringify(optimized.styles))
 
-    // workaround
-    // notify eleventy of this change
-    await touch('src/_includes/home.njk')
-  } catch (error) {
-    if (!isWatch) {
-      process.exitCode = 1
-    }
-
-    console.trace(error)
-  }
+  // workaround
+  // notify eleventy of this change
+  await touch('src/_includes/home.njk')
 }
 
-if (isWatch) {
-  fs.watchFile('src/main.css', { interval: 300 }, buildCSS)
-}
-
-buildCSS()
+main().catch((error) => {
+  process.exitCode = 1
+  console.trace(error)
+})

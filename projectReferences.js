@@ -1,4 +1,4 @@
-const fs = require('fs')
+const fs = require('fs').promises
 const { JSDOM } = require('jsdom')
 
 const fetchStandarddesignunitPosts = async () => {
@@ -28,14 +28,18 @@ const fetchYuheiblogPosts = async () => {
   return posts.slice(0, 5)
 }
 
-Promise.all([fetchStandarddesignunitPosts(), fetchYuheiblogPosts()])
-  .then((postsByProject) => {
-    return fs.promises.writeFile(
-      'src/_data/referencesByProject.json',
-      JSON.stringify(postsByProject),
-    )
-  })
-  .catch((error) => {
-    process.exitCode = 1
-    console.trace(error)
-  })
+const main = async () => {
+  const postsByProject = await Promise.all([
+    fetchStandarddesignunitPosts(),
+    fetchYuheiblogPosts(),
+  ])
+  await fs.writeFile(
+    'src/_data/referencesByProject.json',
+    JSON.stringify(postsByProject),
+  )
+}
+
+main().catch((error) => {
+  process.exitCode = 1
+  console.trace(error)
+})
