@@ -29,13 +29,13 @@ const fetchYuheiblogPosts = async () => {
 }
 
 const main = async () => {
-  const postsByProject = await Promise.all([
+  const referencesByProject = await Promise.all([
     fetchStandarddesignunitPosts(),
     fetchYuheiblogPosts(),
   ])
   await fs.writeFile(
     'src/_data/referencesByProject.json',
-    JSON.stringify(postsByProject),
+    JSON.stringify(referencesByProject),
   )
 }
 
