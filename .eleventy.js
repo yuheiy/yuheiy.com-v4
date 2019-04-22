@@ -1,6 +1,18 @@
 const { JSDOM } = require('jsdom')
 
 module.exports = (eleventyConfig) => {
+  eleventyConfig.addFilter('sectionName', (content) => {
+    const containerElement = JSDOM.fragment(`<div>${content}</div>`)
+      .firstElementChild
+    containerElement.querySelectorAll('section').forEach((sectionElement) => {
+      const headingId = `${sectionElement.id}-heading`
+      const headingElement = sectionElement.querySelector('h2')
+      headingElement.id = headingId
+      sectionElement.setAttribute('aria-labelledby', headingId)
+    })
+    return containerElement.innerHTML
+  })
+
   eleventyConfig.addFilter('h3Icon', (content) => {
     const containerElement = JSDOM.fragment(`<div>${content}</div>`)
       .firstElementChild
