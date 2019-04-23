@@ -38,7 +38,7 @@ body {
 
 @media (min-width: 48em) {
   body {
-    padding-right: 14rem;
+    padding-right: calc(4rem + 8rem + 2rem);
     padding-left: 2rem;
   }
 }
