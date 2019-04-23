@@ -128,8 +128,8 @@ dd {
 }
 
 a {
-  padding-top: calc((2em - 1em) / 4);
-  padding-bottom: calc((2em - 1em) / 4);
+  padding-top: calc((var(--line-height-body) - 1.5) / 2 * 1em);
+  padding-bottom: calc((var(--line-height-body) - 1.5) / 2 * 1em);
   color: var(--color-primary);
   text-decoration-color: var(--color-primary-muted);
 }
@@ -143,11 +143,12 @@ img {
 }
 
 svg {
-  --icon-width: 1.25rem;
-  width: var(--icon-width);
-  margin-top: calc((var(--line-height-body) * 1em - var(--icon-width)) / 2);
+  --icon-height: 1.25rem;
+  --icon-width: var(--icon-height);
+  height: var(--icon-height);
+  margin-top: calc((var(--line-height-body) * 1em - var(--icon-height)) / 2);
   margin-right: calc(2rem - var(--icon-width));
-  margin-bottom: calc((var(--line-height-body) * 1em - var(--icon-width)) / 2);
+  margin-bottom: calc((var(--line-height-body) * 1em - var(--icon-height)) / 2);
   vertical-align: bottom;
   fill: currentcolor;
 }
@@ -167,7 +168,7 @@ h1 + p {
   h1 + p {
     float: right;
     width: 8rem;
-    margin-top: 2.5rem;
+    margin-top: calc(2rem + (var(--line-height-body) - 1) / 2 * 1em);
     margin-right: -12rem;
   }
 }
