@@ -19,14 +19,14 @@ module.exports = (eleventyConfig) => {
     containerElement
       .querySelectorAll('section#interests h3')
       .forEach((headingElement) => {
-        headingElement.innerHTML = `<svg viewBox="0 0 24 24"><use xlink:href="#icon-label"></svg>${
+        headingElement.innerHTML = `<svg viewBox="0 0 24 24"><use href="#icon-label"></svg>${
           headingElement.innerHTML
         }`
       })
     containerElement
       .querySelectorAll('section#projects h3')
       .forEach((headingElement) => {
-        headingElement.innerHTML = `<svg viewBox="0 0 24 24"><use xlink:href="#icon-flag"></svg>${
+        headingElement.innerHTML = `<svg viewBox="0 0 24 24"><use href="#icon-flag"></svg>${
           headingElement.innerHTML
         }`
       })
