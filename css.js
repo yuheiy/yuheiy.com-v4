@@ -1,14 +1,10 @@
 const fs = require('fs').promises
 const postcss = require('postcss')
 const autoprefixer = require('autoprefixer')
-const gapProperties = require('postcss-gap-properties')
 const CleanCSS = require('clean-css')
 const touch = require('touch')
 
-const postcssPlugins = [
-  autoprefixer({ cascade: false }),
-  gapProperties({ preserve: false }),
-]
+const postcssPlugins = [autoprefixer({ cascade: false })]
 
 const processOptions = {
   from: 'src/main.css',
