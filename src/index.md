@@ -92,6 +92,7 @@ Web ComponentsはUIのコンポーネント化を標準の仕組みとして実�
 
 ウェブサイトを変更しやすくかつ長い期間耐えうる設計をするためには、開発ツールについても多角的な視点が必要です。より良い開発環境を構築して開発効率や品質の向上に寄与します。
 
+- [SPAじゃないプロジェクトのための控えめなJavaScriptフレームワーク「Stimulus」](https://yuheiy.hatenablog.com/entry/2019/05/02/204549)
 - [サーバーサイドのみのテンプレートエンジンとしてのReact](https://yuheiy.hatenablog.com/entry/2019/01/15/031235)
 - [CSS in JSはCSSの書き方をどのように変えるのか](https://yuheiy.hatenablog.com/entry/2018/11/22/020322)
 - [cssnextを使うべきか](https://yuheiy.hatenablog.com/entry/2017/09/21/190150)
