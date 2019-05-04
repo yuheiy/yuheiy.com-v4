@@ -9,6 +9,12 @@ const h3Types = {
 }
 
 module.exports = (eleventyConfig) => {
+  eleventyConfig.addFilter('plainText', (html) => {
+    const containerElement = JSDOM.fragment(`<div>${html}</div>`)
+      .firstElementChild
+    return containerElement.textContent
+  })
+
   eleventyConfig.addFilter('dataURI', (filePath) => {
     const buffer = fs.readFileSync(path.join('src', filePath))
     return `data:${fileType(buffer).mime};base64,${buffer.toString('base64')}`

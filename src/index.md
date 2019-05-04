@@ -1,7 +1,7 @@
 ---
 layout: home.njk
 title: 安田祐平
-description: フロントエンドウェブ開発者。1995年生まれ。東京都在住。株式会社シフトブレイン所属。業務では主に運用を見据えたウェブサイトの開発に携わる。
+description: フロントエンドウェブ開発者。1995年生まれ。東京都在住。<br><a href="https://shiftbrain.com/">株式会社シフトブレイン</a>所属。業務では主に運用を見据えたウェブサイトの開発に携わる。
 origin: https://yuheiy.com
 ---
 

@@ -3,13 +3,13 @@
   <head prefix="og: http://ogp.me/ns#">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{{ description }}">
+    <meta name="description" content="{{ description | plainText }}">
     <meta name="twitter:card" content="summary">
     <meta property="og:title" content="{{ title }}">
     <meta property="og:type" content="website">
     <meta property="og:image" content="{{ origin }}/avator.png">
     <meta property="og:url" content="{{ origin }}{{ page.url }}">
-    <meta property="og:description" content="{{ description }}">
+    <meta property="og:description" content="{{ description | plainText }}">
     <meta property="og:locale" content="ja_JP">
     <title>{{ title }}</title>
     <link rel="canonical" href="{{ page.url }}">
@@ -67,8 +67,7 @@
     <header>
       <h1>{{ title }}<small>（やすだ・ゆうへい）</small></h1>
       <p><img src="{{ '/avator.png' | dataURI }}" alt="" decoding="async"></p>
-      <p>フロントエンドウェブ開発者。1995年生まれ。東京都在住。<br>
-        <a href="https://shiftbrain.com/">株式会社シフトブレイン</a>所属。業務では主に運用を見据えたウェブサイトの開発に携わる。</p>
+      <p>{{ description | safe }}</p>
       <dl>
         <dt><svg viewBox="0 0 1 1" role="img" aria-label="Twitter"><use href="#icon-twitter"></svg></dt>
         <dd><a href="https://twitter.com/_yuheiy">@_yuheiy</a></dd>
