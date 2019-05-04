@@ -17,9 +17,9 @@ origin: https://yuheiy.com
 
 私の解釈ではマークアップはデザインプロセスの一部です。コンテンツの意味に向き合いながら、ウェブサイトとしての情報の表現を検証する。その反復行為の過程でHTMLは思考のフレームワークとして役立ちます。
 
-- [制作者のためのHTML（発表資料）](https://yuheiy.github.io/html-for-creators/)
-- [制作者のためのHTML（発表映像）](https://www.pscp.tv/CA11Y_/1rmxPQzWXwgKN?t=56m52s)
-- [状態遷移時にアニメーションを伴うUIのアクセシビリティ周りの実装について](https://yuheiy.hatenablog.com/entry/2018/02/18/113537)
+- presentation:[制作者のためのHTML（資料）](https://yuheiy.github.io/html-for-creators/)
+- presentation:[制作者のためのHTML（映像）](https://www.pscp.tv/CA11Y_/1rmxPQzWXwgKN?t=56m52s)
+- writing:[状態遷移時にアニメーションを伴うUIのアクセシビリティ周りの実装について](https://yuheiy.hatenablog.com/entry/2018/02/18/113537)
 
 </article>
 
@@ -35,7 +35,7 @@ HTML要素はもっともプリミティブなコンポーネントです。多�
 
 サイト固有のスタイルや振る舞いから見てHTMLは骨格なのです。
 
-- [ページ内リンクの実装から考える、a要素のclickイベントとその振る舞い](https://standard.shiftbrain.com/blog/default-action-for-click-event-of-a-element)
+- writing:[ページ内リンクの実装から考える、a要素のclickイベントとその振る舞い](https://standard.shiftbrain.com/blog/default-action-for-click-event-of-a-element)
 
 </article>
 
@@ -47,7 +47,7 @@ CSS設計とは、コンテンツの形式を定義し、UIパターンとして
 
 コンポーネントは階層構造を前提としません。[HTMLのコンテンツカテゴリー](https://developer.mozilla.org/ja/docs/Web/Guide/HTML/Content_categories)のようにコンポーネントは性質を併せ持つものです。UIパターンの種類やドメインとの関係性に着目して、適切な汎用性を命名として表現します。
 
-- [［WIP］CSSの命名について](https://yuheiy.hatenablog.com/entry/2018/12/10/022626)
+- writing:[［WIP］CSSの命名について](https://yuheiy.hatenablog.com/entry/2018/12/10/022626)
 
 </article>
 
@@ -57,8 +57,8 @@ CSS設計とは、コンテンツの形式を定義し、UIパターンとして
 
 Web ComponentsはUIのコンポーネント化を標準の仕組みとして実現する仕様です。すでにいくつかのライブラリにはコンポーネント化の機能がありますが、標準としての採用はその民主化を意味します。コンポーネント化の発想が当たり前の世界になるための技術的な後ろ盾となることを期待しています。
 
-- [Web Componentsを待ち望んでいる話](https://yuheiy.hatenablog.com/entry/2018/03/26/091058)
-- [yuheiy/animated-collapse-element](https://github.com/yuheiy/animated-collapse-element)
+- writing:[Web Componentsを待ち望んでいる話](https://yuheiy.hatenablog.com/entry/2018/03/26/091058)
+- software:[yuheiy/animated-collapse-element](https://github.com/yuheiy/animated-collapse-element)
 
 </article>
 
@@ -68,7 +68,7 @@ Web ComponentsはUIのコンポーネント化を標準の仕組みとして実�
 
 良いUIとは、ユーザーが自律的に考えることができて、ユーザーの主体的な行動を促すものです。UIデザインをユーザーの利益のために、創造的な行動を制限して主導するような考え方から解放しなければなりません。
 
-- [ユーザー自身の道具になるためのインターフェイス](https://yuheiy.github.io/interface-to-become-your-own-tool/)
+- presentation:[ユーザー自身の道具になるためのインターフェイス](https://yuheiy.github.io/interface-to-become-your-own-tool/)
 
 </article>
 
@@ -80,7 +80,7 @@ Web ComponentsはUIのコンポーネント化を標準の仕組みとして実�
 
 それにも関わらずウェブデザインは再び、スマホ用・PC用というアートボードの中に囚われています。これは分業化の結果として逃れられない現象であるとも言えます。その溝を埋めるために現実的なアプローチを探し続けなければなりません。
 
-- [Responsive Grid Designer](https://yuheiy.github.io/grid-settings-designer/)
+- software:[Responsive Grid Designer](https://yuheiy.github.io/grid-settings-designer/)
 
 </article>
 
@@ -92,11 +92,11 @@ Web ComponentsはUIのコンポーネント化を標準の仕組みとして実�
 
 ウェブサイトを変更しやすくかつ長い期間耐えうる設計をするためには、開発ツールについても多角的な視点が必要です。より良い開発環境を構築して開発効率や品質の向上に寄与します。
 
-- [SPAじゃないプロジェクトのための控えめなJavaScriptフレームワーク「Stimulus」](https://yuheiy.hatenablog.com/entry/2019/05/02/204549)
-- [サーバーサイドのみのテンプレートエンジンとしてのReact](https://yuheiy.hatenablog.com/entry/2019/01/15/031235)
-- [CSS in JSはCSSの書き方をどのように変えるのか](https://yuheiy.hatenablog.com/entry/2018/11/22/020322)
-- [cssnextを使うべきか](https://yuheiy.hatenablog.com/entry/2017/09/21/190150)
-- [yuheiy/real-world-website-boilerplate](https://github.com/yuheiy/real-world-website-boilerplate)
+- writing:[SPAじゃないプロジェクトのための控えめなJavaScriptフレームワーク「Stimulus」](https://yuheiy.hatenablog.com/entry/2019/05/02/204549)
+- writing:[サーバーサイドのみのテンプレートエンジンとしてのReact](https://yuheiy.hatenablog.com/entry/2019/01/15/031235)
+- writing:[CSS in JSはCSSの書き方をどのように変えるのか](https://yuheiy.hatenablog.com/entry/2018/11/22/020322)
+- writing:[cssnextを使うべきか](https://yuheiy.hatenablog.com/entry/2017/09/21/190150)
+- software:[yuheiy/real-world-website-boilerplate](https://github.com/yuheiy/real-world-website-boilerplate)
 
 </article>
 
@@ -113,7 +113,7 @@ Web ComponentsはUIのコンポーネント化を標準の仕組みとして実�
 自社で所属しているチームのウェブサイトです。
 
 {% for ref in referencesByProject[0] -%}
-- [{{ ref[0] }}]({{ ref[1] }})
+- writing:[{{ ref[0] }}]({{ ref[1] }})
 {% endfor %}
 
 </article>
@@ -125,7 +125,7 @@ Web ComponentsはUIのコンポーネント化を標準の仕組みとして実�
 ウェブ制作の話題について書いていることが多い個人ブログです。
 
 {% for ref in referencesByProject[1] -%}
-- [{{ ref[0] }}]({{ ref[1] }})
+- writing:[{{ ref[0] }}]({{ ref[1] }})
 {% endfor %}
 
 </article>
