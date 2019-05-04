@@ -173,17 +173,20 @@ a:active {
   background-color: var(--color-fg-thin);
 }
 
-li a:active {
+li a {
   position: relative;
 }
 
-li a:active::before {
+li a::before {
   content: "";
   position: absolute;
   top: 0;
   right: 100%;
   bottom: 0;
   width: var(--icon-imaginary-size);
+}
+
+li a:active::before {
   background-color: var(--color-fg-thin);
 }
 
