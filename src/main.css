@@ -223,10 +223,10 @@ svg {
 
 h1 small {
   font-size: var(--font-size-body);
-  color: var(--color-fg-medium);
 }
 
-h1 ~ p {
+h1 small,
+h1 ~ * {
   color: var(--color-fg-medium);
 }
 
