@@ -206,6 +206,10 @@ a:visited {
   color: var(--color-link-visited);
 }
 
+a:visited svg {
+  fill: var(--color-link-visited); /* workaroud for Safari */
+}
+
 img {
   vertical-align: bottom;
 }
