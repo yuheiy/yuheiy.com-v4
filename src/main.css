@@ -1,20 +1,18 @@
 :root {
   --color-triad-1: hsl(210, 80%, 27%);
-  --color-triad-1-achromatic: hsl(0, 0%, 27%);
   --color-triad-2: hsl(330, 80%, 27%);
   --color-triad-3: hsl(90, 80%, 27%);
+  --color-triad-achromatic: hsl(0, 0%, 27%);
 
   --color-fg-high: hsla(0, 0%, 0%, 0.87);
   --color-fg-medium: hsla(0, 0%, 0%, 0.6);
   --color-fg-thin: hsla(0, 0%, 0%, 0.1);
   --color-bg: hsl(0, 0%, 100%);
-  --color-primary: var(--color-triad-1);
-  --color-primary-achromatic: var(--color-triad-1-achromatic);
+  --color-link: var(--color-triad-1);
+  --color-link-visited: var(--color-triad-achromatic);
+  --color-link-underline: hsla(0, 0%, 0%, 0.25);
   --color-interest: var(--color-triad-2);
   --color-project: var(--color-triad-3);
-
-  --color-link: var(--color-primary);
-  --color-link-underline: hsla(0, 0%, 0%, 0.25);
 
   --font-size-root: 100%;
   --font-size-body: 1rem;
@@ -205,10 +203,7 @@ li a:active::before {
 }
 
 a:visited {
-  --color-link: var(--color-primary-achromatic);
-  color: var(
-    --color-primary-achromatic
-  ); /* https://bugs.chromium.org/p/chromium/issues/detail?id=768220 */
+  color: var(--color-link-visited);
 }
 
 img {
@@ -267,13 +262,9 @@ body > main > section > article::after {
   color: var(--color-project);
 }
 
-h3 a {
+h3 a:any-link {
   color: inherit;
   background-position: center bottom;
-}
-
-h3 a:visited {
-  color: inherit; /* https://bugs.chromium.org/p/chromium/issues/detail?id=768220 */
 }
 
 @media (min-width: 57.5em) {
