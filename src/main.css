@@ -165,6 +165,10 @@ dd {
   margin-left: 0;
 }
 
+figure {
+  margin: var(--rlh) 0 0;
+}
+
 a {
   padding-top: calc((var(--lh) - 1.5em) / 2);
   padding-bottom: calc((var(--lh) - 1.5em) / 2);
@@ -230,14 +234,14 @@ h1 ~ * {
   color: var(--color-fg-medium);
 }
 
-h1 + p {
+h1 + figure {
   width: calc(100% / 3);
   margin-left: auto;
   box-shadow: 0 0 0 1px var(--color-fg-thin);
 }
 
 @media (min-width: 57.5em) {
-  h1 + p {
+  h1 + figure {
     float: right;
     width: var(--grid-sub);
     margin-top: calc(var(--rlh) + (var(--lh) - 1em) / 2);
@@ -245,7 +249,7 @@ h1 + p {
   }
 }
 
-h1 + p img {
+h1 + figure img {
   width: 100%;
 }
 
