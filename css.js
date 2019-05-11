@@ -2,7 +2,6 @@ const fs = require('fs').promises
 const postcss = require('postcss')
 const autoprefixer = require('autoprefixer')
 const CleanCSS = require('clean-css')
-const touch = require('touch')
 
 const postcssPlugins = [autoprefixer({ cascade: false })]
 
@@ -22,11 +21,7 @@ const main = async () => {
     processOptions,
   )
   const optimized = await optimizer.minify(postcssResult.css)
-  await fs.writeFile('src/_data/css.json', JSON.stringify(optimized.styles))
-
-  // workaround
-  // notify eleventy of this change
-  await touch('src/_includes/home.njk')
+  await fs.writeFile('src/_includes/main.css', optimized.styles)
 }
 
 main().catch((error) => {

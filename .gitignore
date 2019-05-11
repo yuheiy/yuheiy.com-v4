@@ -62,5 +62,5 @@ typings/
 
 # project build output
 /dist/
-/src/_data/css.json
 /src/_data/referencesByProject.json
+/src/_includes/main.css

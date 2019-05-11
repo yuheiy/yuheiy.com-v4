@@ -61,6 +61,8 @@ module.exports = (eleventyConfig) => {
     ghostMode: false,
   })
 
+  eleventyConfig.setUseGitIgnore(false)
+
   return {
     dir: {
       input: 'src',
