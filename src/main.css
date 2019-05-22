@@ -14,6 +14,9 @@
   --color-interest: var(--color-triad-2);
   --color-project: var(--color-triad-3);
 
+  --color-twitter: #1da1f2;
+  --color-github: #171515;
+
   --font-size-root: 100%;
   --font-size-body: 1rem;
   --font-size-h1: 1.5rem;
@@ -32,6 +35,23 @@
 
   --icon-imaginary-size: 3rem;
   --icon-size: 1.5em;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-triad-1: hsl(210, 100%, 70%);
+    --color-triad-2: hsl(330, 100%, 70%);
+    --color-triad-3: hsl(90, 100%, 70%);
+    --color-triad-achromatic: hsl(0, 0%, 68%);
+
+    --color-fg-high: hsla(0, 0%, 100%, 0.87);
+    --color-fg-medium: hsla(0, 0%, 100%, 0.6);
+    --color-fg-thin: hsla(0, 0%, 100%, 0.1);
+    --color-bg: hsl(206, 7%, 21%);
+    --color-link-underline: hsla(0, 0%, 100%, 0.25);
+
+    --color-github: #fff;
+  }
 }
 
 /* (6 + ((8 + 4 + 8 + 4 + 8) + 4 + 8) + 6) + 1.5 */
