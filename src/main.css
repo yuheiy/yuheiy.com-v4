@@ -42,7 +42,7 @@
     --color-triad-1: hsl(210, 100%, 70%);
     --color-triad-2: hsl(330, 100%, 70%);
     --color-triad-3: hsl(90, 100%, 70%);
-    --color-triad-achromatic: hsl(0, 0%, 68%);
+    --color-triad-achromatic: hsl(0, 0%, 70%);
 
     --color-fg-high: hsla(0, 0%, 100%, 0.87);
     --color-fg-medium: hsla(0, 0%, 100%, 0.6);
