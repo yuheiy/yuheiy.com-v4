@@ -11,11 +11,13 @@ origin: https://yuheiy.com
 
 <article id="markup-is-design-process">
 
-### マークアップはデザインプロセス
+### マークアップはデザインについて考えるためのものさし
 
 マークアップは後付けの作業だと思われがちです。すでに完成している画面仕様を、単にHTMLに変換するだけの行為であると理解する人は少なくありません。
 
-私の解釈ではマークアップはデザインプロセスの一部です。コンテンツの意味に向き合いながら、ウェブサイトとしての情報の表現を検証する。その反復行為の過程でHTMLは思考のフレームワークとして役立ちます。
+私にとって、マークアップはものさしのようなものです。ひとつひとつの要素の意味からページ全体の構造に至るまで、制作者が自身の表現の意味について知り、そして考えるための視点です。デザインを「ただ見ている」とき、それはひとつの角度でしか見ていません。マークアップによってアプローチの方向を増やすことで、これまでに得られなかった発見があるはずです。
+
+すると、マークアップはデザインとしての試行錯誤の過程であると捉えられます。言い換えれば、マークアップはデザイン作業の中に位置付けられます。具体的には、デザインツール上で作業しているときにも、常に頭の中でマークアップをすることに意味があります。HTMLはそうした思考のためのフレームワークです。
 
 - presentation:[制作者のためのHTML（資料）](https://yuheiy.github.io/html-for-creators/)
 - presentation:[制作者のためのHTML（映像）](https://www.pscp.tv/CA11Y_/1rmxPQzWXwgKN?t=56m52s)
@@ -47,7 +49,7 @@ CSS設計とは、コンテンツの形式を定義し、UIパターンとして
 
 コンポーネントは階層構造を前提としません。[HTMLのコンテンツカテゴリー](https://developer.mozilla.org/ja/docs/Web/Guide/HTML/Content_categories)のようにコンポーネントは性質を併せ持つものです。UIパターンの種類やドメインとの関係性に着目して、適切な汎用性を命名として表現します。
 
-- writing:[［WIP］CSSの命名について](https://yuheiy.hatenablog.com/entry/2018/12/10/022626)
+- writing:[特定のコンテンツのためのコンポーネントとそうでないコンポーネント](https://yuheiy.hatenablog.com/entry/2019/06/05/105642)
 
 </article>
 
@@ -57,6 +59,7 @@ CSS設計とは、コンテンツの形式を定義し、UIパターンとして
 
 Web ComponentsはUIのコンポーネント化を標準の仕組みとして実現する仕様です。すでにいくつかのライブラリにはコンポーネント化の機能がありますが、標準としての採用はその民主化を意味します。コンポーネント化の発想が当たり前の世界になるための技術的な後ろ盾となることを期待しています。
 
+- writing:[［翻訳］Web Componentsに祝杯を？](https://yuheiy.hatenablog.com/entry/2019/06/08/204623)
 - writing:[Web Componentsを待ち望んでいる話](https://yuheiy.hatenablog.com/entry/2018/03/26/091058)
 - software:[yuheiy/animated-collapse-element](https://github.com/yuheiy/animated-collapse-element)
 
