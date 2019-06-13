@@ -9,9 +9,9 @@ origin: https://yuheiy.com
 
 ## 関心
 
-<article id="markup-is-design-process">
+<article id="markup-is-measure">
 
-### マークアップはデザインについて考えるためのものさし
+### マークアップは考えるためのものさし
 
 マークアップは後付けの作業だと思われがちです。すでに完成している画面仕様を、単にHTMLに変換するだけの行為であると理解する人は少なくありません。
 
@@ -41,13 +41,13 @@ HTML要素はもっともプリミティブなコンポーネントです。多�
 
 </article>
 
-<article id="css-architecture-formalizes-ui-patterns">
+<article id="reflect-design-intents-in-css-architecture">
 
-### CSS設計はUIパターンを形式化する
+### CSS設計には設計意図を反映させる
 
-CSS設計とは、コンテンツの形式を定義し、UIパターンとして表現し、ウェブサイトのポテンシャルを具現化する行為です。CSSのための命名にはパターンとしての世界観を反映させます。
+CSS設計とはサイトのデザインパターンを形式化することです。つまり状態の一時的な再現だけでなく、その先に変化のポテンシャルを感じられるだけの意図を反映させることです。
 
-コンポーネントは階層構造を前提としません。[HTMLのコンテンツカテゴリー](https://developer.mozilla.org/ja/docs/Web/Guide/HTML/Content_categories)のようにコンポーネントは性質を併せ持つものです。UIパターンの種類やドメインとの関係性に着目して、適切な汎用性を命名として表現します。
+コンポーネントは階層構造を前提としません。[HTMLのコンテンツカテゴリー](https://developer.mozilla.org/ja/docs/Web/Guide/HTML/Content_categories)のようにコンポーネントは性質を併せ持つものです。
 
 - writing:[特定のコンテンツのためのコンポーネントとそうでないコンポーネント](https://yuheiy.hatenablog.com/entry/2019/06/05/105642)
 
@@ -57,7 +57,7 @@ CSS設計とは、コンテンツの形式を定義し、UIパターンとして
 
 ### Web Componentsが実現する世界
 
-Web ComponentsはUIのコンポーネント化を標準の仕組みとして実現する仕様です。すでにいくつかのライブラリにはコンポーネント化の機能がありますが、標準としての採用はその民主化を意味します。コンポーネント化の発想が当たり前の世界になるための技術的な後ろ盾となることを期待しています。
+Web ComponentsはUIのコンポーネント化を標準の仕組みとして実現する仕様です。すでにいくつかのライブラリにはコンポーネント化の機能がありますが、標準としての採用はその民主化を意味します。コンポーネント化の発想が当たり前の世界になるために、技術的な後ろ盾となることを期待しています。
 
 - writing:[［翻訳］Web Componentsに祝杯を？](https://yuheiy.hatenablog.com/entry/2019/06/08/204623)
 - writing:[Web Componentsを待ち望んでいる話](https://yuheiy.hatenablog.com/entry/2018/03/26/091058)
