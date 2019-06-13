@@ -21,13 +21,13 @@
   --font-size-body: 1rem;
   --font-size-h1: 1.5rem;
   --font-size-h2: 1.5rem;
-  --font-size-h3: 1rem;
+  --font-size-h3: 1.25rem;
 
   --line-height-body: 2;
   --line-height-root: var(--line-height-body);
   --line-height-h1: calc(2 / 1.5);
   --line-height-h2: calc(2 / 1.5);
-  --line-height-h3: var(--line-height-body);
+  --line-height-h3: calc(2 / 1.25);
 
   --grid-main: 32rem;
   --grid-gap: 2rem;
