@@ -118,7 +118,6 @@ h3 {
   --lh: calc(var(--font-size-h3) * var(--line-height-h3));
   margin-top: calc(var(--rlh) * 2);
   margin-bottom: 0;
-  padding-left: var(--icon-imaginary-size);
   font-size: var(--font-size-h3);
   line-height: var(--line-height-h3);
 }
@@ -131,6 +130,7 @@ h3 {
 }
 
 h3 svg {
+  display: none;
   margin-left: calc(var(--icon-imaginary-size) * -1);
 }
 
@@ -138,6 +138,7 @@ h3 svg {
   h3 svg {
     --icon-imaginary-size: 4rem;
     --icon-size: 1em;
+    display: inline;
   }
 }
 
