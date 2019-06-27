@@ -9,7 +9,7 @@ origin: https://yuheiy.com
 
 ## 関心
 
-<article id="markup-is-measure">
+<article id="markup-is-ruler">
 
 ### マークアップは考えるためのものさし
 
