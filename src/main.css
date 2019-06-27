@@ -20,14 +20,14 @@
   --font-size-root: 100%;
   --font-size-body: 1rem;
   --font-size-h1: 1.5rem;
-  --font-size-h2: 1.5rem;
-  --font-size-h3: 1.25rem;
+  --font-size-h2: 1.25rem;
+  --font-size-h3: 1.5rem;
 
   --line-height-body: 2;
   --line-height-root: var(--line-height-body);
   --line-height-h1: calc(2 / 1.5);
-  --line-height-h2: calc(2 / 1.5);
-  --line-height-h3: calc(2 / 1.25);
+  --line-height-h2: calc(2 / 1.25);
+  --line-height-h3: calc(2 / 1.5);
 
   --grid-main: 32rem;
   --grid-gap: 2rem;
@@ -57,7 +57,9 @@
 /* (6 + ((8 + 4 + 8 + 4 + 8) + 4 + 8) + 6) + 1.5 */
 @media (min-width: 57.5em) {
   :root {
+    --font-size-h2: 1.5rem;
     --font-size-h3: 2rem;
+    --line-height-h2: calc(2 / 1.5);
     --line-height-h3: calc(2.5 / 2);
     --grid-sub: 8rem;
     --grid-gap: 4rem;
