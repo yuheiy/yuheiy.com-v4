@@ -75,18 +75,6 @@ Web ComponentsはUIのコンポーネント化を標準の仕組みとして実�
 
 </article>
 
-<article id="responsive-web-design-and-division-of-labor">
-
-### レスポンシブウェブデザインと分業
-
-レスポンシブウェブデザインはウェブデザインを固定幅という制約から解放しました。同時に、静的なデザインカンプと本物のレンダリング結果とのギャップを浮き彫りにしました。それ以前まで、ウェブデザインは960pxであるという決めつけに囚われていました。
-
-それにも関わらずウェブデザインは再び、スマホ用・PC用というアートボードの中に囚われています。これは分業化の結果として逃れられない現象であるとも言えます。その溝を埋めるために現実的なアプローチを探し続けなければなりません。
-
-- software:[Responsive Grid Designer](https://yuheiy.github.io/grid-settings-designer/)
-
-</article>
-
 <article id="front-end-development-environment-for-websites">
 
 ### ウェブサイトのためのフロントエンド開発環境
