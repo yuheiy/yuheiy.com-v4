@@ -57,7 +57,7 @@
 /* (6 + ((8 + 4 + 8 + 4 + 8) + 4 + 8) + 6) + 1.5 */
 @media (min-width: 57.5em) {
   :root {
-    --font-size-root: calc((100vw - 57.5em) / 200 + 1em);
+    --font-size-root: calc((100vw - 57.5em) / 300 + 1em);
     --font-size-h2: 1.5rem;
     --font-size-h3: 2rem;
     --line-height-h2: calc(2 / 1.5);
