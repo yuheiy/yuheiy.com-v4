@@ -1,4 +1,4 @@
-# yuheiy.com v4 [![Build Status](https://travis-ci.com/yuheiy/yuheiy.com-v4.svg?branch=master)](https://travis-ci.com/yuheiy/yuheiy.com-v4)
+# yuheiy.com v4
 
 安田祐平の個人サイト。簡易的な人物紹介に加え、関心事や活動のうち主要なものを一覧できる。
 
