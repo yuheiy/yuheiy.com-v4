@@ -1,0 +1,71 @@
+{
+  "title": "安田祐平（やすだ・ゆうへい）",
+  "description": "フロントエンドウェブ開発者。1995年生まれ。東京都在住。株式会社シフトブレイン所属。業務では主に運用を見据えたウェブサイトの開発に携わる。",
+  "origin": "https://yuheiy.com",
+  "lang": "ja",
+  "region": "JP",
+  "posts": [
+    {
+      "title": "「代替」の意味を探して",
+      "type": "presentation",
+      "link": "https://yuheiy.github.io/meanings-of-the-alternative/",
+      "description": "HTMLにおける「代替」とは何なのか。代替テキスト・アクセシビリティツリー・文書構造とプレゼンテーションの分離などについて。"
+    },
+    {
+      "title": "レスポンシブデザインに見るデザインカンプと実装との溝",
+      "type": "writing",
+      "link": "https://standard.shiftbrain.com/blog/the-gap-between-design-and-implementation-in-responsive-design",
+      "description": "自作ツールの紹介を通して、デザインカンプと実装の関係性・グリッドシステム・レスポンシブデザインの意味などを考察。"
+    },
+    {
+      "title": "特定のコンテンツのためのコンポーネントとそうでないコンポーネント",
+      "type": "writing",
+      "link": "https://yuheiy.hatenablog.com/entry/2019/06/05/105642",
+      "description": "UIコンポーネントの中には、特定のコンテンツに依存するものとコンテンツに依らず汎用的に再利用可能なものがある。"
+    },
+    {
+      "title": "SPAじゃないプロジェクトのための控えめなJavaScriptフレームワーク「Stimulus」",
+      "type": "writing",
+      "link": "https://yuheiy.hatenablog.com/entry/2019/05/02/204549",
+      "description": "SPA開発のための高機能なライブラリはよく話題に上がるが、JavaScriptありきでないドキュメント寄りのサイトに適したライブラリはあまり盛り上がらない。そのようなサイトでは割合としてのJavaScriptの量は少なくとも、規模によっては適切に設計できていなければ身動きが取れなくなっていく。"
+    },
+    {
+      "title": "制作者のためのHTML",
+      "type": "presentation",
+      "link": "https://yuheiy.github.io/html-for-creators/",
+      "description": "HTMLはアクセシビリティやSEOの文脈において、「ユーザーにとって」重要であるという語られ方をする。しかし視点を変えれば、制作者はHTMLをよいデザインを行うための思考のフレームワークとして利用できる。"
+    },
+    {
+      "title": "ユーザー自身の道具になるためのインターフェイス",
+      "type": "presentation",
+      "link": "https://yuheiy.github.io/interface-to-become-your-own-tool/",
+      "description": "「モーダル」なデザインはユーザーの創造性を制限する。すると提供側がユーザーの行動を主導する形になり、使いにくく感じられる道具ができてしまう。"
+    },
+    {
+      "title": "ページ内リンクの実装から考える、a要素のclickイベントとその振る舞い",
+      "type": "writing",
+      "link": "https://standard.shiftbrain.com/blog/default-action-for-click-event-of-a-element",
+      "description": "ページになにかしらの機能を実装するとき、開発者はブラウザがもともと備えている挙動を取り消して独自の実装で上書きしてしまう場合がある。大抵はその挙動を代替する実装を行うが、もしかしたらそれは見えている仕様の一部だけを表面的に模写したもので、開発者は重要な挙動の存在を見落としてユーザーに不利益を与えてしまっているかもしれない。"
+    }
+  ],
+  "projects": [
+    {
+      "title": "シフトブレイン／スタンダードデザインユニット",
+      "image": "/assets/projects/standard-design-unit.png",
+      "link": "https://standard.shiftbrain.com/",
+      "description": "自社で所属しているチームのウェブサイト。事例紹介や技術ブログなどを投稿中。"
+    },
+    {
+      "title": "accrefs",
+      "image": "/assets/projects/accrefs.png",
+      "link": "https://accrefs.jp/",
+      "description": "Webアクセシビリティの参考資料をまとめたサイト。日本語の資料を中心にリンク数は200を超える。サイトのデザインおよび実装に携わる。有志のメンバーにより制作・運営されている。"
+    },
+    {
+      "title": "yuhei blog",
+      "image": "/apple-touch-icon.png",
+      "link": "https://yuheiy.hatenablog.com/",
+      "description": "主にウェブ制作の話題について書いている個人ブログ。"
+    }
+  ]
+}

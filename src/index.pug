@@ -1,0 +1,165 @@
+doctype html
+html(lang=lang)
+  head(prefix="og: http://ogp.me/ns#")
+    meta(charset="utf-8")
+    meta(
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    )
+    title=title
+    meta(
+      name="description"
+      content=description
+    )
+    meta(
+      name="twitter:card"
+      content="summary"
+    )
+    meta(
+      property="og:title"
+      content=title
+    )
+    meta(
+      property="og:image"
+      content=`${origin}/apple-touch-icon.png`
+    )
+    meta(
+      property="og:url"
+      content=`${origin}${page.url}`
+    )
+    meta(
+      property="og:description"
+      content=description
+    )
+    meta(
+      property="og:locale"
+      content=`${lang}_${region}`
+    )
+    link(
+      rel="canonical"
+      href=`${origin}${page.url}`
+    )
+    link(
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=optional"
+    )
+    link(
+      rel="stylesheet"
+      href="/assets/main.css"
+    )
+    link(
+      rel="apple-touch-icon"
+      href="/apple-touch-icon.png"
+    )
+
+  body
+    div(hidden)
+      span#label-writing 文章
+      span#label-presentation プレゼンテーション
+
+    .stack.-xlarge
+      header.with-sidebar
+        div
+          div
+            img(
+              src="/apple-touch-icon.png"
+              width="180"
+              height="180"
+              alt=""
+              decoding="async"
+              loading="lazy"
+            )
+
+          .stack
+            h1 安田祐平#[small （やすだ・ゆうへい）]
+
+            p
+              | フロントエンドウェブ開発者。1995年生まれ。東京都在住。
+              br
+              | #[a(href="https://shiftbrain.com/") 株式会社シフトブレイン]所属。業務では主に運用を見据えたウェブサイトの開発に携わる。
+
+            address
+              ul
+                li
+                  a(href="https://twitter.com/_yuheiy") Twitter
+                li
+                  a(href="https://github.com/yuheiy") GitHub
+                li
+                  a(href="mailto:yuhei.yasuda1003@gmail.com") Eメール
+
+            .divider(class="margin-top:large")
+
+      main.stack.-xlarge
+        section#posts.with-sidebar(aria-labelledby="posts-heading")
+          div
+            header
+              h2#posts-heading 主な投稿
+
+            .stack.-xlarge
+              each publication, index in posts
+                - const id = `posts:${encodeURIComponent(publication.title)}`
+                - const headingId = `${id}-heading`
+
+                article.stack(
+                  id=id
+                  aria-labelledby=headingId
+                )
+                  h3.item-title(id=headingId)
+                    a(
+                      href=publication.link
+                      aria-describedby=`label-${publication.type}`
+                    )
+                      svg(viewBox="0 0 1 1")
+                        use(href=`/assets/icons.svg#${publication.type}`)
+                      span=publication.title
+
+                  if publication.description
+                    p!=publication.description
+
+        .with-sidebar
+          div
+            div(class="margin-top:0 margin-bottom:0")
+            div
+              .divider
+
+        section#projects.with-sidebar(aria-labelledby="projects-heading")
+          div
+            header
+              h2#projects-heading プロジェクト
+
+            .stack.-xlarge
+              each project, index in projects
+                - const id = `projects:${encodeURIComponent(project.title)}`
+                - const headingId = `projects:${encodeURIComponent(project.title)}-heading`
+
+                article.stack(
+                  id=id
+                  aria-labelledby=headingId
+                )
+                  h3.item-title(id=headingId)
+                    a(href=project.link)
+                      img(
+                        src=project.image
+                        width="180"
+                        height="180"
+                        alt=""
+                        decoding="async"
+                        loading="lazy"
+                      )
+                      span=project.title
+
+                  if project.description
+                    p!=project.description
+
+      footer.with-sidebar
+        div
+          div(class="margin-top:0 margin-bottom:0")
+
+          div
+            .divider
+
+            ul(class="margin-top:large")
+              li
+                a(href="https://creativecommons.org/licenses/by/4.0/" rel="license") CC BY 4.0
+              li
+                a(href="https://github.com/yuheiy/yuheiy.com-v4/commits/gh-pages") 変更履歴
