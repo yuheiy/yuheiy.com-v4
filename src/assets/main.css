@@ -198,6 +198,17 @@ header img {
 .item-title > a > img,
 .item-title > a > svg {
   flex-shrink: 0;
+}
+
+.item-title > a > img {
+  --spacing: 0.375rem;
+  margin: calc(var(--spacing) / 2);
+  width: calc(
+    var(--font-size-xlarge) * var(--line-height-small) - var(--spacing)
+  );
+}
+
+.item-title > a > svg {
   width: calc(var(--font-size-xlarge) * var(--line-height-small));
 }
 
