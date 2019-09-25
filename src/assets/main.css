@@ -127,6 +127,7 @@ svg {
 header h1 small {
   font-size: var(--font-size-default);
   font-weight: normal;
+  font-kerning: none;
   font-feature-settings: normal;
 }
 
