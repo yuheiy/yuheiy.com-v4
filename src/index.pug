@@ -94,14 +94,14 @@ html(lang=lang)
             .divider(class="margin-top:large")
 
       main.stack.-xlarge
-        section#posts.with-sidebar(aria-labelledby="posts-heading")
+        section#publications.with-sidebar(aria-labelledby="publications-heading")
           div
             header
-              h2#posts-heading 主な投稿
+              h2#publications-heading 主な投稿
 
             .stack.-xlarge
-              each publication, index in posts
-                - const id = `posts:${encodeURIComponent(publication.title)}`
+              each publication, index in publications
+                - const id = `publications:${encodeURIComponent(publication.title)}`
                 - const headingId = `${id}-heading`
 
                 article.stack(
