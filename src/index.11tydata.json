@@ -6,6 +6,12 @@
   "region": "JP",
   "publications": [
     {
+      "title": "レイアウトプリミティブ",
+      "type": "presentation",
+      "link": "https://standard.shiftbrain.com/blog/layout-primitives",
+      "description": "コンポーネント単体では目に見えないが、他と組み合わせることで意味のあるレイアウトができるというパターンがある。それらをレイアウトプリミティブと呼び、再利用性を高めるためのルールを紹介。"
+    },
+    {
       "title": "「代替」の意味を探して",
       "type": "presentation",
       "link": "https://yuheiy.github.io/meanings-of-the-alternative/",
