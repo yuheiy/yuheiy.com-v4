@@ -1,15 +1,4 @@
 {
-  "name": "yuheiy.com-v4",
-  "version": "0.0.0",
-  "homepage": "https://yuheiy.com/",
-  "bugs": {
-    "url": "https://github.com/yuheiy/yuheiy.com-v4/issues"
-  },
-  "author": "Yuhei Yasuda <yuhei.yasuda1003@gmail.com> (https://yuheiy.com/)",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yuheiy/yuheiy.com-v4.git"
-  },
   "scripts": {
     "clean": "rimraf dist/",
     "prestart": "npm run clean",
@@ -18,8 +7,12 @@
     "build": "eleventy"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.9.0",
-    "rimraf": "^3.0.0"
+    "@11ty/eleventy": "^0.10.0",
+    "js-yaml": "^3.13.1",
+    "rimraf": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=12"
   },
   "private": true
 }

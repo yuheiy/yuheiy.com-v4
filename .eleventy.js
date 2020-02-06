@@ -1,9 +1,11 @@
+const yaml = require('js-yaml')
+
 module.exports = (eleventyConfig) => {
-  eleventyConfig.addPassthroughCopy('src/assets')
-  eleventyConfig.addPassthroughCopy('src/.nojekyll')
-  eleventyConfig.addPassthroughCopy('src/apple-touch-icon.png')
-  eleventyConfig.addPassthroughCopy('src/CNAME')
-  eleventyConfig.addPassthroughCopy('src/favicon.ico')
+  eleventyConfig.addPassthroughCopy({ public: '.' })
+
+  eleventyConfig.addDataExtension('yml', (content) => {
+    return yaml.safeLoad(content)
+  })
 
   eleventyConfig.setBrowserSyncConfig({ ghostMode: false })
 
