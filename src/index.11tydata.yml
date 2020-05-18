@@ -4,10 +4,20 @@ origin: https://yuheiy.com
 lang: ja
 region: JP
 publications:
+  - title: 実践的レイアウトプリミティブ
+    type: writing
+    link: https://yuheiy.hatenablog.com/entry/2020/05/18/094715
+    description: レイアウトプリミティブはその高い汎用性をもって現実のプロジェクトにおける実装の総量や個別性を抑制する。実用性に主眼を置き、見いだされてきた具体的な設計手法の解説。
+
+  - title: CSSにおける汎用化の先送り、ユーティリティファーストCSS、レイアウトプリミティブ
+    type: writing
+    link: https://yuheiy.hatenablog.com/entry/2020/05/06/213311
+    description: CSSの汎用化は、それが汎用的であると本当に判明したタイミングになってから行われるべきだ。ではいかにすればうまくそれを実現できるのか、いくつかのアプローチと照らし合わせながら考察する。
+
   - title: レイアウトプリミティブ
     type: presentation
     link: https://standard.shiftbrain.com/blog/layout-primitives
-    description: コンポーネント単体では目に見えないが、他と組み合わせることで意味のあるレイアウトができるというパターンがある。それらをレイアウトプリミティブと呼び、再利用性を高めるためのルールを紹介。
+    description: コンポーネント単体では目に見えないが、ほかと組み合わせることで意味のあるレイアウトができるというパターンがある。それらをレイアウトプリミティブと呼び、再利用性を高めるためのルールを紹介。
 
   - title: 「代替」の意味を探して
     type: presentation
