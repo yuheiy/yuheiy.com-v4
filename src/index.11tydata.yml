@@ -4,6 +4,11 @@ origin: https://yuheiy.com
 lang: ja
 region: JP
 publications:
+  - title: 翻訳：CSSユーティリティクラスと「関心の分離」（いかにしてユーティリティファーストにたどり着いたか）
+    type: writing
+    link: https://yuheiy.hatenablog.com/entry/2020/05/25/021342
+    description: クラス名はどのように命名すればいいのか。コンテンツに依存する名前をつけると再利用性がなくなってしまうので、少しずつ名前を抽象化していく必要があるが、その繰り返しには際限がなくひたすら労力がかかる。ではどうすればこの抽象化を上手く行っていけるか。
+
   - title: 実践的レイアウトプリミティブ
     type: writing
     link: https://yuheiy.hatenablog.com/entry/2020/05/18/094715
@@ -13,6 +18,11 @@ publications:
     type: writing
     link: https://yuheiy.hatenablog.com/entry/2020/05/06/213311
     description: CSSの汎用化は、それが汎用的であると本当に判明したタイミングになってから行われるべきだ。ではいかにすればうまくそれを実現できるのか、いくつかのアプローチと照らし合わせながら考察する。
+
+  - title: 翻訳：Rich Harris「形而上学とJavaScript」に関する見解（ReactによるDOMの抽象化の不完全性について）
+    type: writing
+    link: https://yuheiy.hatenablog.com/entry/2020/01/25/230154
+    description: Reactはその宣言的なアプローチを成立させるために、本来の命令的なDOMとの間で膨大な橋渡しを行っている。これは設計として無理があるだけではなく、ユーザーである開発者のメンタルモデルにも歪みを生じさせてしまう。
 
   - title: レイアウトプリミティブ
     type: presentation
@@ -28,11 +38,6 @@ publications:
     type: writing
     link: https://standard.shiftbrain.com/blog/the-gap-between-design-and-implementation-in-responsive-design
     description: 自作ツールの紹介を通して、デザインカンプと実装の関係性・グリッドシステム・レスポンシブデザインの意味などを考察。
-
-  - title: 特定のコンテンツのためのコンポーネントとそうでないコンポーネント
-    type: writing
-    link: https://yuheiy.hatenablog.com/entry/2019/06/05/105642
-    description: UIコンポーネントの中には、特定のコンテンツに依存するものとコンテンツに依らず汎用的に再利用可能なものがある。
 
   - title: SPAじゃないプロジェクトのための控えめなJavaScriptフレームワーク「Stimulus」
     type: writing
