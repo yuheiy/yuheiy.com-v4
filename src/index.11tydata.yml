@@ -1,5 +1,5 @@
 title: 安田祐平（やすだ・ゆうへい）
-description: フロントエンドウェブ開発者。1995年生まれ。東京都在住。株式会社シフトブレイン／スタンダードデザインユニット所属。業務では主に運用を見据えたウェブサイトの開発に携わる。
+description: フロントエンドウェブ開発者。1995年生まれ。東京都在住。業務では主に運用を見据えたウェブサイトの開発に携わる。
 origin: https://yuheiy.com
 lang: ja
 region: JP
@@ -60,17 +60,17 @@ publications:
     description: ページになにかしらの機能を実装するとき、開発者はブラウザがもともと備えている挙動を取り消して独自の実装で上書きしてしまう場合がある。大抵はその挙動を代替する実装を行うが、もしかしたらそれは見えている仕様の一部だけを表面的に模写したもので、開発者は重要な挙動の存在を見落としてユーザーに不利益を与えてしまっているかもしれない。
 
 projects:
-  - title: シフトブレイン／スタンダードデザインユニット
-    image: /assets/projects/standard-design-unit.png
-    link: https://standard.shiftbrain.com/
-    description: 自社で所属しているチームのウェブサイト。事例紹介や技術ブログなどを投稿中。
+  - title: yuhei blog
+    image: /apple-touch-icon.png
+    link: https://yuheiy.hatenablog.com/
+    description: 主にウェブ制作の話題について書いている個人ブログ。
 
   - title: accrefs
     image: /assets/projects/accrefs.png
     link: https://accrefs.jp/
     description: ウェブアクセシビリティの参考資料をまとめたサイト。日本語の資料を中心にリンク数は200を超える。サイトのデザインおよび実装に携わる。有志のメンバーにより制作・運営されている。
 
-  - title: yuhei blog
-    image: /apple-touch-icon.png
-    link: https://yuheiy.hatenablog.com/
-    description: 主にウェブ制作の話題について書いている個人ブログ。
+  - title: シフトブレイン／スタンダードデザインユニット
+    image: /assets/projects/standard-design-unit.png
+    link: https://standard.shiftbrain.com/
+    description: 自社で所属していたチームのウェブサイト。更新終了済み。
