@@ -4,6 +4,16 @@ origin: https://yuheiy.com
 lang: ja
 region: JP
 publications:
+  - title: UIにおける見えるけど利用できない非活性な領域の実装とinert属性について
+    type: writing
+    link: https://standard.shiftbrain.com/blog/unavailable-inert-regions-and-inert-attribute
+    description: UIの意図としては利用できないはずの部分が、正しく本当に利用できない状態に実装されていることは実は少ない。ではどのようにすれば確実に利用できない状態を作り出せるか。
+
+  - title: 次世代インラインスタイル
+    type: writing
+    link: https://yuheiy.hatenablog.com/entry/2020/06/22/200616
+    description: ユーティリティファーストCSSは実質的にインラインスタイルと言えるが、インラインスタイルには機能的な制約がある。それを乗り越えてインラインスタイルライクな実装をしていくための工夫など。
+
   - title: 翻訳：CSSユーティリティクラスと「関心の分離」（いかにしてユーティリティファーストにたどり着いたか）
     type: writing
     link: https://yuheiy.hatenablog.com/entry/2020/05/25/021342
